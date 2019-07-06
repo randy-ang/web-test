@@ -1,19 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import {reduxForm} from 'redux-form';
-import {connect} from 'react-redux';
-import Denominator, { fields } from './Denominator';
-import { validateFields } from './util/validator.util';
-import DenominatorPage from './Denominator.page';
+import AllRoutes from './index.routes';
+import LanguageContext from './context/language.context';
+import { getDictionary } from './util/language';
 
 const App = () => {
   return (
-    <div className="App">
-      <DenominatorPage/>
-    </div>
+    <LanguageContext.Provider value={getDictionary()}>
+      <div className="App">
+        <AllRoutes/>
+      </div>
+    </LanguageContext.Provider>
   );
 }
 
