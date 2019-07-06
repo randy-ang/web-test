@@ -47,5 +47,6 @@
     "node": "10.15.0",
     "yarn": "1.16.0",
     "npm": "6.4.1"
-  }
+  },
+  "homepage": "https://rupiah-denominator.herokuapp.com/"
 }
