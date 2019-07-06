@@ -1,10 +1,8 @@
 import English from "./English";
-import Indonesia from "./Bahasa";
 import {result} from 'lodash';
 
 
 const languageMap = {
-  id: Indonesia,
   en: English,
 }
 
