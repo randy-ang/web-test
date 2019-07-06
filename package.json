@@ -1,6 +1,6 @@
 {
   "name": "web-test",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "private": true,
   "dependencies": {
     "@babel/preset-env": "^7.5.0",
@@ -25,6 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "heroku-prebuild": "scripts/start.sh",
     "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
