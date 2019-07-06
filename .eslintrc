@@ -1,0 +1,19 @@
+{
+  "parser": "babel-eslint",
+  "ecmaFeatures": {
+    "jsx": true,
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "no-console": 2,
+    "no-unused-vars": [1, {
+      "varsIgnorePattern": "React"
+    }],
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ]
+}
