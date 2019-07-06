@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
 import {reducer as form} from 'redux-form';
-import denominator from './denominator.reducer';
+import value from './value.reducer';
 
 export default combineReducers({
   form,
-  denominator,
+  value,
 })
