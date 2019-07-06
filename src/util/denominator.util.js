@@ -3,7 +3,7 @@ import find from 'lodash/find';
 import result from 'lodash/result';
 
 // check multiple values against 0 or more conditions
-export const sumTotalUsed = (value) => sumBy(objects, (o) => o.used);
+export const sumTotalUsed = (value) => sumBy(value, (o) => o.used);
 
 export const getValueUsed = (value, toBeChecked) => {
   const found = find(toBeChecked, (obj) => obj.value === value);
