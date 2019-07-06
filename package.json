@@ -1,6 +1,6 @@
 {
   "name": "web-test",
-  "version": "0.2.0",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@babel/preset-env": "^7.5.0",
@@ -43,6 +43,8 @@
     ]
   },
   "engines": {
-    "node": "10.15.0"
+    "node": "10.15.0",
+    "yarn": "1.16.0",
+    "npm": "6.4.1"
   }
 }

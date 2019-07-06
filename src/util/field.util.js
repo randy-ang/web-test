@@ -3,6 +3,7 @@ import Text from '@material-ui/core/TextField';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import styles from './field.util.styles';
 import getLanguage from './language';
+import PropTypes from 'prop-types'
 
 /**
  * Used only with Field from redux-form
@@ -30,3 +31,10 @@ export const TextField = ({
         </FormHelperText>
         }
     </div>)}
+
+TextField.propTypes = {
+  input: PropTypes.object,
+  meta: PropTypes.object,
+  label: PropTypes.string,
+
+}

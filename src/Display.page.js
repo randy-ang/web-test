@@ -6,6 +6,7 @@ import { sort } from './util/common.util';
 import { getValueUsed } from './util/denominator.util';
 import map from 'lodash/map';
 import DisplayValue from './Display.component';
+import PropTypes from 'prop-types';
 
 const DisplayPage = ({value}) => {
   // redirect if no value is needed to be broken down
@@ -25,6 +26,10 @@ const DisplayPage = ({value}) => {
 const denomState = ({value}) => ({
   value,
 })
+
+DisplayPage.propTypes = {
+  value: PropTypes.array
+}
 
 const denomDispatch = null;
 

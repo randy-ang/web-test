@@ -1,11 +1,6 @@
-import { setValue, clearValue } from "../reducer/index.action";
-// import { setLanguage as setWords, getAvailableLanguage, checkLanguageAvailability } from "../util/language";
+import { setValue } from "../reducer/index.action";
 import possibleValue from '../util/constant/value.constant';
-import map from 'lodash/map';
-import { sort, goTo, parseIndonesianCurrency } from "../util/common.util";
-import forEach from 'lodash/forEach';
-import noop from 'lodash/noop';
-import { INDEX_ROUTES } from "../util/constant/routes.constant";
+import { sort, parseIndonesianCurrency } from "../util/common.util";
 
 export const denominateValue = (value) => (dispatch) => {
   const mappedValue = parseIndonesianCurrency(value)

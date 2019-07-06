@@ -15,5 +15,9 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
-  ]
+  ],
+  "globals": {
+    "it": false,
+    "require": false,
+  }
 }
