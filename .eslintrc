@@ -19,5 +19,8 @@
   "globals": {
     "it": false,
     "require": false,
+    "describe": false,  
+    "expect": false,
+    "document": false
   }
 }

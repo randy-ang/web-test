@@ -24,3 +24,16 @@ export const parseIndonesianCurrency = (value) => {
   // replace comma with dots (to be used with parseFloat)
   return value.replace(/\./g, '').replace(/,/, '.');
 }
+
+// split array into n parts
+export const splitArray = (array = [], noOfArray = 1) => {
+  let retArray = [];
+  const indexJump = array.length/noOfArray;
+  let index = 0;
+  while (index < array.length) {
+    const nextIndex = index + indexJump;
+    retArray.push(array.slice(index, nextIndex));
+    index = nextIndex;
+  }
+  return retArray;
+}

@@ -12,12 +12,6 @@ import { BrowserRouter } from 'react-router-dom';
 
 const middleWare = [thunkMiddleware, promise];
 
-if (process.env.NODE_ENV === `development`) {
-  console.log('DEVELOPMENT MODE', process.env.NODE_ENV);
-  const { logger } = require(`redux-logger`);
-  middleWare.push(logger);
-}
-
 const applyMiddleWare = applyMiddleware(...middleWare);
 
 // const enhancers = compose(middleWare, )
