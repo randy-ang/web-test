@@ -29,6 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku-postbuild": "yarn build",
+    "merge": "git checkout deploy && git merge test",
     "publish": "git checkout deploy && chmod +x \"scripts/release.sh\" && \"scripts/release.sh\" && node deploy.js",
     "test-publish": "git checkout test && chmod +x \"scripts/staging.sh\" && \"scripts/staging.sh\" && node deploy-test.js"
   },
