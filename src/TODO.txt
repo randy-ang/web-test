@@ -12,7 +12,7 @@ Examples of valid inputs with their canonical equivalents 18.215 (18215), Rp1750
 
 Examples of invalid inputs: 17,500 (invalid separator),  2 500(invalid separator), 3000 Rp (valid character in wrong position), Rp (missing value)
 Requirements 
-Account for only available current rupiah fractions 100000, 50000, 20000, 10000, 5000, 1000, 500, 100 and 50. done 
+Account for only available current rupiah fractions 100000, 50000, 20000, 10000, 5000, 2000, 1000, 500, 100 and 50. done 
 You MUST use Javascript, CSS, and HTML to do this. done
 The UI should consist of an input field that accepts an amount string e.g Rp 500 done
 And displays the denominations needed when the user hits ‘Enter’ done
@@ -24,7 +24,7 @@ User input parsing and validation
 Clean visual design
 (Preferable) Use of js framework (React, Angular, Vue, etc) done
 (Preferable) Use of js build tools (Webpack, Rollup, Babel, Gulp, Grunt)
-(Preferable) Host your app on cloud (Heroku, Digital Ocean, AWS, Zeit) in progress
+(Preferable) Host your app on cloud (Heroku, Digital Ocean, AWS, Zeit) in progress done
 
 Help
 If you have any issues with this assessment or require some clarification then please email your contact at Tokopedia
