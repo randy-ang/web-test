@@ -1,0 +1,5 @@
+{
+  "name": "Rupiah Denominator",
+  "description": "Breaks down a value (in Rupiah) in smaller, available values",
+  "repository": "https://github.com/randy-ang/web-test"
+}

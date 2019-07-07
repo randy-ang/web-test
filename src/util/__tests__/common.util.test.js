@@ -10,7 +10,7 @@ describe('sort', () => {
     const dummyValues = [1,3,2];
     const expected = [3,2,1];
     expect(util.sort(dummyValues, false)).toEqual(expected);
-});
+}); 
 });
 
 describe('is empty or null', () => {
@@ -71,27 +71,21 @@ describe('parse currency', () => {
       });
       describe("with decimal", () => {
         it('one decimal place', () => {
-          const dummyValues = "10,0";
+          const dummyValues = "10.0";
           const expected = dummyValues;
           expect(util.parseIndonesianCurrency(dummyValues)).toEqual(expected);
         });
         it('two decimal place', () => {
-          const dummyValues = "10,00";
+          const dummyValues = "10.00";
           const expected = dummyValues;
           expect(util.parseIndonesianCurrency(dummyValues)).toEqual(expected);
         });
       });
     });
+});
 
-    
-    // it('negative tests', () => { 
-    //   const expected = true;
-    //   expect(dummyValues.reduce(((sumConditions, conditions) => sumConditions || !!validator.validateCurrency(conditions)), false)).toEqual(expected);
-    // });
-  //   describe('thousand places', () => {
-  //   it('negative tests', () => { 
-  //     const expected = true;
-  //     expect(dummyValues.reduce(((sumConditions, conditions) => sumConditions || !!validator.validateCurrency(conditions)), false)).toEqual(expected);
-  //   });
-  // });
+it("split array", () => {
+  const dummyValues = [1,2,3,4,5,6,7,8,9];
+  const expected = [[1,2,3,4], [5,6,7,8,9]];
+  expect(util.splitArray(dummyValues, 2)).toEqual(expected); 
 });

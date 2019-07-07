@@ -1,6 +1,6 @@
 {
   "name": "web-test",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "dependencies": {
     "@babel/preset-env": "^7.5.0",
@@ -26,11 +26,12 @@
     "start": "node start.js && node server.js",
     "start-dev": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --verbose --coverage",
     "eject": "react-scripts eject",
     "heroku-postbuild": "yarn build",
+    "merge": "git checkout deploy && git merge test",
     "publish": "git checkout deploy && chmod +x \"scripts/release.sh\" && \"scripts/release.sh\" && node deploy.js",
-    "test-publish": "chmod +x \"scripts/dev.sh\" && \"scripts/dev.sh\" && node deploy-test.js"
+    "test-publish": "git checkout test && chmod +x \"scripts/staging.sh\" && \"scripts/staging.sh\" && node deploy-test.js"
   },
   "eslintConfig": {
     "extends": "react-app"
