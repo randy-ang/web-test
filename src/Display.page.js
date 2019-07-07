@@ -5,15 +5,15 @@ import { splitArray } from './util/common.util';
 import map from 'lodash/map';
 import DisplayValue from './Display.component';
 import PropTypes from 'prop-types';
-import sumBy from 'lodash/sumBy';
 import LanguageContext from './context/language.context';
+import { sumTotalUsed } from './util/__tests__/denominator.util';
 
 const DisplayPage = ({value: val = {}}) => {
   const {NO_CHANGE, REMAINDER_LEFT} = useContext(LanguageContext);
   const {remainder, value} = val;
   // displayed in ascending order
   const shownValue = value.filter((o) => o.used > 0) // only show those who's used 1 or more times
-  const totalUsed = sumBy(shownValue, (o) => o.used);
+  const totalUsed = sumTotalUsed(shownValue)
   const dividedSorted = shownValue.length > 5 ? splitArray(shownValue, 2) : [shownValue];
   return (
     <div className="displayContainer">
