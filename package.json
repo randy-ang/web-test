@@ -28,8 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-prebuild": "chmod +x scripts/release.sh && scripts/release.sh",
-    "heroku-postbuild": "npm run buid"
+    "heroku-prebuild": "ls && cd .. && ls && chmod +x scripts/release.sh && scripts/release.sh",
+    "heroku-postbuild": "yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
