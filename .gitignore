@@ -23,5 +23,4 @@ yarn-error.log*
 .babelrc
 
 #bash scripts
-deploy.js
 scripts/release.sh
