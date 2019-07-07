@@ -36,7 +36,7 @@ const DenominatorPage = ({value, ...props}) => {
 }
 
 DenominatorPage.propTypes = {
-  value: PropTypes.array,
+  value: PropTypes.object,
 }
 
 const denomState = ({value}) => ({
