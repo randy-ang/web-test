@@ -14,7 +14,7 @@ describe('validate formatted currency', () => {
     it('positive tests', () => {
       const dummyValues = ['1', '1,0', '1,00', '100', '100,0', '100,00'];
       const expected = false;
-      expect(dummyValues.reduce(((sumConditions, conditions) => sumConditions || !!validator.validateCurrency(conditions)), false)).toEqual(expected);
+      expect(dummyValues.reduce(((sumConditions, conditions) => sumConditions && !!validator.validateCurrency(conditions)), false)).toEqual(expected);
     });
     it('negative tests', () => { 
       const dummyValues = ['100.0', '100,', '100.00', '100,000'];
@@ -26,7 +26,7 @@ describe('validate formatted currency', () => {
     it('positive tests', () => {
       const dummyValues = ['100.000', '10.000', '1.000.000'];
       const expected = false;
-      expect(dummyValues.reduce(((sumConditions, conditions) => sumConditions || !!validator.validateCurrency(conditions)), false)).toEqual(expected);
+      expect(dummyValues.reduce(((sumConditions, conditions) => sumConditions && !!validator.validateCurrency(conditions)), false)).toEqual(expected);
     });
     it('negative tests', () => { 
       const dummyValues = ['100.00, 10.00, 1000.000'];
