@@ -29,7 +29,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku-postbuild": "yarn build",
-    "publish": "chmod +x \"scripts/release.sh\" && \"scripts/release.sh\" && node deploy.js"
+    "publish": "git checkout deploy && chmod +x \"scripts/release.sh\" && \"scripts/release.sh\" && node deploy.js",
+    "test-publish": "chmod +x \"scripts/dev.sh\" && \"scripts/dev.sh\" && node deploy-test.js"
   },
   "eslintConfig": {
     "extends": "react-app"
