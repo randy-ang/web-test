@@ -22,7 +22,7 @@ const formConfig = {
 
 const DenominatorForm = reduxForm(formConfig)(Denominator)
 
-const DenominatorPage = ({value, ...props}) => {
+const DenominatorPage = ({value = {}, ...props}) => {
   return (
     <div className="container">
       {
@@ -36,7 +36,7 @@ const DenominatorPage = ({value, ...props}) => {
 }
 
 DenominatorPage.propTypes = {
-  value: PropTypes.array,
+  value: PropTypes.object,
 }
 
 const denomState = ({value}) => ({
