@@ -18,9 +18,9 @@ run test
 runs release.sh, which copies production .env into .env
 afterwards, pushes into git branch 'deploy' using bash command 
 deploy will usually be pr-ed into master
-master will then be automatically built for production
+master will then be automatically built for production - https://tp-web-test.herokuapp.com/
 
 **npm run test-publish - chmod +x \"scripts/staging.sh\" && \"scripts/staging.sh\" && node deploy-test.js**
 runs dev.sh, which copies dev .env into .env
 afterwards, pushes into git branch 'test' using bash command 
-test will be automatically built for staging environment
+test will be automatically built for staging environment - https://rupiah-denominator.herokuapp.com/
