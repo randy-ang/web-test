@@ -1,7 +1,7 @@
 import React from 'react';
 import './Display.css';
 import {connect} from 'react-redux';
-import { sort, splitArray } from './util/common.util';
+import { splitArray } from './util/common.util';
 import map from 'lodash/map';
 import DisplayValue from './Display.component';
 import PropTypes from 'prop-types';
@@ -9,8 +9,7 @@ import PropTypes from 'prop-types';
 const DisplayPage = ({value = []}) => {
   // displayed in ascending order
   const shownValue = value.filter((o) => o.used > 0) // only show those who's used 1 or more times
-  const sortedValue = sort(shownValue, false);
-  const dividedSorted = sortedValue.length > 5 ? splitArray(sortedValue, 2) : [sortedValue];
+  const dividedSorted = shownValue.length > 5 ? splitArray(shownValue, 2) : [shownValue];
   return (
     <div className="displayContainer">
       {
