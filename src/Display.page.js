@@ -6,7 +6,7 @@ import map from 'lodash/map';
 import DisplayValue from './Display.component';
 import PropTypes from 'prop-types';
 import LanguageContext from './context/language.context';
-import { sumTotalUsed } from './util/__tests__/denominator.util';
+import { sumTotalUsed } from './util/denominator.util';
 
 const DisplayPage = ({value: val = {}}) => {
   const {NO_CHANGE, REMAINDER_LEFT} = useContext(LanguageContext);

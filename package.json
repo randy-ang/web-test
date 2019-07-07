@@ -1,6 +1,6 @@
 {
   "name": "web-test",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "dependencies": {
     "@babel/preset-env": "^7.5.0",
