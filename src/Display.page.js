@@ -32,7 +32,7 @@ const DisplayPage = ({value: val = {}}) => {
             </section>
         ))}
         {
-          remainder && <p className="text">{REMAINDER_LEFT(remainder)}</p>
+          <p className="text">{REMAINDER_LEFT(remainder)}</p>
         }
         </div>
       }
