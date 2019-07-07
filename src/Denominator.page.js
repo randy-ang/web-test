@@ -17,7 +17,6 @@ const formConfig = {
   validate: (values) => ({
     ...validateFields(values, [fields.denominator]), // to check against empty values
     [fields.denominator]: validateCurrency(values[fields.denominator])
-    // [fields.name.username]: validateEmail(values[fields.name.username]),
   })
 }
 
