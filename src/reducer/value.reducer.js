@@ -1,6 +1,6 @@
 import { SAVE_VALUE, CLEAR_VALUE } from '../util/constant/actions.constant';
 
-const defaultState = {};
+const defaultState = [];
 
 export default function config (state = defaultState, action) {
   switch (action.type) {

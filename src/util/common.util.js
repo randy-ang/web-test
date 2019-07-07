@@ -1,11 +1,12 @@
 import isEmpty from 'lodash/isEmpty';
+import { validateCurrency } from './validator.util';
 
-const sortByAsc = (values) => {
+const sortByDesc = (values) => {
   if(typeof(values) !== 'object') return values;
   return values.sort((a, b) => b - a);
 }
 
-const sortByDesc = (values) => {
+const sortByAsc = (values) => {
   if(typeof(values) !== 'object') return values;
   return values.sort((a, b) => a - b);
 }
@@ -17,11 +18,12 @@ export const goTo = (history, link) => history.push(link);
 
 // object === false is to check if the object passed is false or not
 // if false, then it's probably intended
-export const isEmptyOrNull = (object) => object === false ? false : isEmpty(object) || !object;
+export const isEmptyOrNull = (object) => object === false || object === 0 ? false : typeof(object) === 'object' ? isEmpty(object) : !object
 
 export const parseIndonesianCurrency = (value) => {
   // remove all dots (position in thousands)
   // replace comma with dots (to be used with parseFloat)
+  if (validateCurrency(value)) return value;
   return value.replace(/\./g, '').replace(/,/, '.');
 }
 
