@@ -1,6 +1,6 @@
 import React from 'react';
 import './Display.css';
-
+import PropTypes from 'prop-types';
 
 const DisplayValue = ({value, valueUsed}) => {
   return (
@@ -11,6 +11,11 @@ const DisplayValue = ({value, valueUsed}) => {
       <p className="text">{`Rp. ${value}`}</p>
     </div> : null
   );
+}
+
+DisplayValue.propTypes = {
+  value: PropTypes.number,
+  valueUsed: PropTypes.number
 }
 
 export default DisplayValue;

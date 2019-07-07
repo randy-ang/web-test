@@ -10,4 +10,6 @@ export default {
     INVALID_CURRENCY: 'The amount you inputted is invalid',
   },
   RP: 'Rp', 
+  NO_CHANGE: 'Sorry, no change is available based on what you gave us.',
+  REMAINDER_LEFT: (remainder) => `You have Rp. ${remainder} left`
 }

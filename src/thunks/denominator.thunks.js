@@ -11,5 +11,5 @@ export const denominateValue = (value) => (dispatch) => {
     valueLeft = valueLeft - valueUsed * val;
     return ({used: valueUsed, value: val});
   })
-  dispatch(setValue(valueInfo));
+  dispatch(setValue({value: valueInfo, remainder: valueLeft}));
 };

@@ -1,110 +1,52 @@
 #rp50 {
   background-image: url('assets/50.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  
 }
 
 #rp100 {
   background-image: url('assets/100.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 #rp500 {
   background-image: url('assets/500.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 #rp1000 {
   background-image: url('assets/1000.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
   
   
 }
 
 #rp2000 {
   background-image: url('assets/2000.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
 }
 
 #rp5000 {
   background-image: url('assets/5000.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+ 
 }
 
 #rp10000 {
   background-image: url('assets/10000.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 #rp20000 {
   background-image: url('assets/20000.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 #rp50000 {
   background-image: url('assets/50000.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+ 
 }
 
 #rp100000 {
   background-image: url('assets/100000.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  
 }
 
 .displayContainer {
@@ -115,7 +57,6 @@
 .sectionContainer {
   display: flex;
   flex-direction: row;
-  padding: 20px 0;
   width: 100%;
   justify-content: center;
 }
@@ -131,6 +72,12 @@
 .size {
   width: 140px;
   height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .moneyContainer{
